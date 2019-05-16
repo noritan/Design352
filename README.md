@@ -25,3 +25,31 @@ An LED is driven by a PWM component PWM_LED with 4Hz 50% duty pulses.
 An another PWM component PWM_BLINK controls the PWM_LED with 3sec period 50% duty pulses.
 As the result, the LED acts as intermittent blink behavior.
 
+
+## AlternateBlink
+
+This project is an example project to control five LEDs with a pair of complementary PWM output.
+Three out of five LEDs are driven by a positive phase PWM signal.
+Another two LEDs are driven by a negative phase PWM signal.
+
+
+## DoubleKey
+
+This project is an example project to control a PWM with two tactile switches.
+The PWM is started when both two switches are turned on.
+
+
+## ReadSmartPort
+
+This project is an example project to read the Smart I/O's data side output with CPU.
+The GPIO interface can be used to read the data side output.
+It is available to get a logic signal processed by the Smart I/O with CPU.
+
+
+## GatedInterrupt
+
+This project is an example project to use the Smart I/O's data side output as an interrupt signal.
+Three tactile switches are connected to the input pin P2[2:0]
+The data3 output has an AND signal of these tactile switches.
+The data3 output is used as an interrupt using the GPIO's Interrupt Logic.
+
